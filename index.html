@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οδηγός Σχολή - Οδηγίες με Εμπιστοσύνη</title>
+    <meta name="description" content="Επαγγελματική οδηγός σχολή στην Ελλάδα. Μαθαίνετε να οδηγάτε με εμπιστοσύνη και ασφάλεια. Προετοιμασία για πρώτη άδεια οδήγησης, ανανέωση άδειας, μαθήματα μοτοσικλέτας.">
+    <meta name="keywords" content="οδηγός σχολή Ελλάδα, μαθήματα οδήγησης Αθήνα, πρώτη άδεια οδήγησης, ανανέωση άδειας οδήγησης">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('http://static.photos/road/1200x630/42');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-blue-600">Οδηγός<span class="text-yellow-500">Σχολή</span></div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Αρχική</a>
+                    <a href="#courses" class="text-gray-700 hover:text-blue-600 font-medium">Μαθήματα</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">Σχετικά</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Επικοινωνία</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Κράτηση</button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Αρχική</a>
+                <a href="#courses" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Μαθήματα</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Σχετικά</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Επικοινωνία</a>
+                <button class="w-full mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Κράτηση</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-24 pb-20 md:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4" data-aos="fade-up">Μάθε να Οδηγάς με Εμπιστοσύνη</h1>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Επαγγελματική εκπαίδευση οδήγησης με έμφαση στην ασφάλεια και την εμπιστοσύνη</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition transform hover:scale-105">Κράτηση Μαθήματος</button>
+                <button class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-lg transition">Επικοινωνία</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Η Εμπιστοσύνη μας είναι η Δική σας Επιτυχία</h2>
+                    <p class="text-gray-600 mb-4">Η Οδηγός Σχολή ιδρύθηκε το 2005 με στόχο την παροχή ποιοτικής εκπαίδευσης οδήγησης σε όλους τους ηλικιακούς ομίλους.</p>
+                    <p class="text-gray-600 mb-6">Με εμπειρογνώμονες εκπαιδευτές, σύγχρονα οχήματα και εξατομικευμένη προσέγγιση, βοηθάμε χιλιάδες μαθητές να αποκτήσουν την άδεια οδήγησης κάθε χρόνο.</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center">
+                            <i data-feather="award" class="text-yellow-500 w-6 h-6 mr-2"></i>
+                            <span class="font-medium">Πιστοποιημένη Σχολή</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="users" class="text-blue-600 w-6 h-6 mr-2"></i>
+                            <span class="font-medium">15+ Χρόνια Εμπειρίας</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="flex justify-center">
+                    <img src="http://static.photos/instructor/640x360/123" alt="Εκπαιδευτής Οδήγησης" class="rounded-xl shadow-lg w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Τα Μαθήματά μας</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Επιλέξτε το πακέτο που ταιριάζει στις ανάγκες σας και ξεκινήστε τη διαδρομή σας προς την άδεια οδήγησης</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up">
+                    <img src="http://static.photos/car/640x360/1" alt="Μαθήματα Αυτοκινήτου" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Μαθήματα Αυτοκινήτου</h3>
+                        <p class="text-gray-600 mb-4">Ολοκληρωμένο πρόγραμμα για πρώτη άδεια οδήγησης</p>
+                        <div class="text-2xl font-bold text-blue-600 mb-4">€450</div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Εγγραφή Τώρα</button>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/motorcycle/640x360/2" alt="Μαθήματα Μοτοσικλέτας" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Μαθήματα Μοτοσικλέτας</h3>
+                        <p class="text-gray-600 mb-4">Εξειδικευμένη εκπαίδευση για άδεια μοτοσικλέτας</p>
+                        <div class="text-2xl font-bold text-blue-600 mb-4">€380</div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Εγγραφή Τώρα</button>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/renewal/640x360/3" alt="Ανανέωση Άδειας" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ανανέωση Άδειας</h3>
+                        <p class="text-gray-600 mb-4">Γρήγορη και αποτελεσματική ανανέωση άδειας</p>
+                        <div class="text-2xl font-bold text-blue-600 mb-4">€80</div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Εγγραφή Τώρα</button>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/theory/640x360/4" alt="Θεωρητικά Μαθήματα" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Θεωρητικά Μαθήματα</h3>
+                        <p class="text-gray-600 mb-4">Ολοκληρωμένη προετοιμασία για τις θεωρητικές εξετάσεις</p>
+                        <div class="text-2xl font-bold text-blue-600 mb-4">€120</div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Εγγραφή Τώρα</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Πώς Λειτουργεί</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Απλά βήματα για να αποκτήσετε την άδεια οδήγησης</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="user-plus" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Εγγραφή</h3>
+                    <p class="text-gray-600">Επιλέξτε πακέτο και κλείστε ραντεβού</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="book-open" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Θεωρητικά Μαθήματα</h3>
+                    <p class="text-gray-600">Εκμάθηση κανόνων κυκλοφορίας και σήμανσης</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="steering-wheel" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Πρακτικά Μαθήματα</h3>
+                    <p class="text-gray-600">Εκπαίδευση στον δρόμο με εμπειρογνώμονα εκπαιδευτή</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="check-circle" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Εξετάσεις & Άδεια</h3>
+                    <p class="text-gray-600">Υποβολή αίτησης και λήψη άδειας οδήγησης</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Ιστορίες Επιτυχίας</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Δείτε τι λένε οι μαθητές μας για την εμπειρία τους</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/student/200x200/1" alt="Μαθητής" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Μαρία Παπαδοπούλου</h4>
+                            <p class="text-gray-600 text-sm">Άδεια Αυτοκινήτου</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Ο εκπαιδευτής μου βοήθησε να ξεπεράσω τον φόβο μου και να περάσω τις εξετάσεις με επιτυχία στην πρώτη προσπάθεια!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/student/200x200/2" alt="Μαθητής" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Γιώργος Κωνσταντίνου</h4>
+                            <p class="text-gray-600 text-sm">Άδεια Μοτοσικλέτας</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Εξαιρετική εμπειρία! Τα μαθήματα ήταν κατανοητά και διασκεδαστικά. Προτείνω ανεπιφύλακτα!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/student/200x200/3" alt="Μαθητής" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ελένη Στεφανίδου</h4>
+                            <p class="text-gray-600 text-sm">Ανανέωση Άδειας</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Γρήγορη και αποτελεσματική διαδικασία ανανέωσης. Πολύ ευγενικό και επαγγελματικό προσωπικό!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Συχνές Ερωτήσεις</h2>
+                <p class="text-gray-600">Βρείτε απαντήσεις στις πιο συνηθισμένες ερωτήσεις</p>
+            </div>
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-lg p-6" data-aos="fade-up">
+                    <h3 class="text-lg font-bold mb-2">Ποια έγγραφα χρειάζομαι για να ξεκινήσω τα μαθήματα;</h3>
+                    <p class="text-gray-600">Χρειάζεστε την ταυτότητά σας, ΑΜΚΑ και πιστοποιητικό διαμονής (για ξένους πολίτες). Θα σας βοηθήσουμε να συμπληρώσετε την αίτηση εγγραφής.</p>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-lg font-bold mb-2">Πόσο διαρκούν τα μαθήματα;</h3>
+                    <p class="text-gray-600">Κάθε μάθημα διαρκεί 45 λεπτά. Το πρόγραμμα μπορεί να προσαρμοστεί ανάλογα με τις ανάγκες σας και τον ελεύθερο χρόνο σας.</p>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-lg p-6" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-lg font-bold mb-2">Ποιες μέθοδοι πληρωμής δέχεστε;</h3>
+                    <p class="text-gray-600">Δεχόμαστε μετρητά, πιστωτικές/χρεωστικές κάρτες και τραπεζική κατάθεση. Προσφέρουμε επίσης δόσεις χωρίς τόκους.</p>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-lg p-6" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-lg font-bold mb-2">Πόσο χρόνο χρειάζεται για να πάρω την άδεια;</h3>
+                    <p class="text-gray-600">Ο μέσος χρόνος είναι 2-3 μήνες για την πρώτη άδεια, ανάλογα με τη συχνότητα των μαθημάτων και την πρόοδό σας.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Επικοινωνήστε μαζί μας</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Έχετε ερωτήσεις; Επικοινωνήστε μαζί μας για περισσότερες πληροφορίες</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6">Πληροφορίες Επικοινωνίας</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="text-blue-600 w-6 h-6 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Διεύθυνση</h4>
+                                    <p class="text-gray-600">Οδός Πανεπιστημίου 45, Αθήνα 105 64</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="text-blue-600 w-6 h-6 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Τηλέφωνο</h4>
+                                    <p class="text-gray-600">+30 210 123 4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="text-blue-600 w-6 h-6 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Email</h4>
+                                    <p class="text-gray-600">info@odigos-sxoli.gr</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="message-circle" class="text-blue-600 w-6 h-6 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">WhatsApp</h4>
+                                    <p class="text-gray-600">+30 697 123 4567</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.619309000843!2d23.73139931532184!3d37.98391597972065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3e91987fb5%3A0x2736359e470a1d4!2sUniversity%20of%20Athens!5e0!3m2!1sen!2sgr!4v1650000000000!5m2!1sen!2sgr" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Αποστολή Μηνύματος</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="name">Όνομα</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="phone">Τηλέφωνο</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="message">Μήνυμα</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-medium">Αποστολή Μηνύματος</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Οδηγός<span class="text-yellow-500">Σχολή</span></h3>
+                    <p class="text-gray-400 mb-4">Επαγγελματική εκπαίδευση οδήγησης με έμφαση στην ασφάλεια και την εμπιστοσύνη.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Υπηρεσίες</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Μαθήματα Αυτοκινήτου</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Μαθήματα Μοτοσικλέτας</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ανανέωση Άδειας</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Θεωρητικά Μαθήματα</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Χρήσιμα</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Συχνές Ερωτήσεις</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Όροι Χρήσης</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Πολιτική Απορρήτου</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Επικοινωνία</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Εγγραφείτε στο Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Λάβετε ενημερώσεις και προσφορές</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Το email σας" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 rounded-r-lg font-medium">OK</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Οδηγός Σχολή. Με επιφύλαξη παντός δικαιώματος.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
